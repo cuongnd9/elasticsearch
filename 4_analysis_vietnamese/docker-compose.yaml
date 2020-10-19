@@ -1,10 +1,11 @@
 version: '3.4'
 services:
   elasticsearch:
+    container_name: elasticsearch
     image: docker.elastic.co/elasticsearch/elasticsearch:${ES_VERSION:-7.3.1}
     restart: on-failure
     ports:
-      - "9200:9200"
+      - 9200:9200
     volumes:
       - ./elasticsearch-analysis-vietnamese-${ES_VERSION:-7.3.1}.zip:/usr/share/elasticsearch/plugin/elasticsearch-analysis-vietnamese-${ES_VERSION:-7.3.1}.zip
       - ./install-es-plugin.sh:/apps/install-es-plugin.sh

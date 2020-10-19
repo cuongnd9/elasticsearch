@@ -1,0 +1,34 @@
+{
+  "settings":{
+    "index": {
+      "number_of_shards": 5,
+      "number_of_replicas": 2
+    },
+    "analysis":{
+      "analyzer":{
+        "vietnamese_analyzer":{
+          "tokenizer": "vi_tokenizer",
+          "char_filter":  [ "html_strip" ],
+          "filter": [
+            "icu_folding"
+          ]
+        }
+      }
+    }
+  },
+  "mappings":{
+    "properties":{
+      "id": {
+        "type": "text"
+      },
+      "name":{
+        "type":"text",
+        "analyzer":"vietnamese_analyzer"
+      },
+      "bio": {
+        "type":"text",
+        "analyzer":"vietnamese_analyzer"
+      }
+    }
+  }
+}

@@ -127,6 +127,59 @@ curl -X POST 'http://127.0.0.1:9200/_analyze' -H 'content-type: application/json
 curl -X PUT 'http://127.0.0.1:9200/newcats' -H 'content-type: application/json' -d '{"settings":{"analysis":{"filter":{"stemmer":{"type":"stemmer","language":"english"},"stopwords":{"type":"stop","stopwords":["_english_"]}},"analyzer":{"custom_analyzer":{"filter":["stopwords","lowercase","stemmer"],"type":"custom","tokenizer":"standard"}}}},"mappings":{"properties":{"name":{"type":"text","analyzer":"custom_analyzer","search_analyzer":"custom_analyzer"},"color":{"type":"text","analyzer":"custom_analyzer","search_analyzer":"custom_analyzer"},"gender":{"type":"text","analyzer":"custom_analyzer","search_analyzer":"custom_analyzer"}}}}'
 ```
 
+*details settings*
+
+``json
+{
+   "settings":{
+      "analysis":{
+         "filter":{
+            "stemmer":{
+               "type":"stemmer",
+               "language":"english"
+            },
+            "stopwords":{
+               "type":"stop",
+               "stopwords":[
+                  "_english_"
+               ]
+            }
+         },
+         "analyzer":{
+            "custom_analyzer":{
+               "filter":[
+                  "stopwords",
+                  "lowercase",
+                  "stemmer"
+               ],
+               "type":"custom",
+               "tokenizer":"standard"
+            }
+         }
+      }
+   },
+   "mappings":{
+      "properties":{
+         "name":{
+            "type":"text",
+            "analyzer":"custom_analyzer",
+            "search_analyzer":"custom_analyzer"
+         },
+         "color":{
+            "type":"text",
+            "analyzer":"custom_analyzer",
+            "search_analyzer":"custom_analyzer"
+         },
+         "gender":{
+            "type":"text",
+            "analyzer":"custom_analyzer",
+            "search_analyzer":"custom_analyzer"
+         }
+      }
+   }
+}
+```
+
 *output*
 
 ```json
