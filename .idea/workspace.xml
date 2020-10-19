@@ -20,12 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6adf52f8-f1fd-4f42-afd4-c9c1cbf4167a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/elasticsearch.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4_analysis_vietnamese/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/4_analysis_vietnamese/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4_analysis_vietnamese/mappings/cats.json" beforeDir="false" afterPath="$PROJECT_DIR$/4_analysis_vietnamese/mappings/cats.json" afterDir="false" />
@@ -67,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603089406888</updated>
-      <workItem from="1603089407959" duration="12397000" />
+      <workItem from="1603089407959" duration="13118000" />
     </task>
     <servers />
   </component>

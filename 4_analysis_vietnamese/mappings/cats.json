@@ -12,6 +12,13 @@
             "icu_folding",
             "lowercase"
           ]
+        },
+        "vietnamese_analyzer_2":{
+          "tokenizer": "standard",
+          "filter": [
+            "icu_folding",
+            "lowercase"
+          ]
         }
       }
     }
@@ -28,6 +35,10 @@
       "bio": {
         "type":"text",
         "analyzer":"vietnamese_analyzer"
+      },
+      "bio_2": {
+        "type":"text",
+        "analyzer":"vietnamese_analyzer_2"
       }
     }
   }
