@@ -8,9 +8,9 @@
       "analyzer":{
         "vietnamese_analyzer":{
           "tokenizer": "vi_tokenizer",
-          "char_filter":  [ "html_strip" ],
           "filter": [
-            "icu_folding"
+            "icu_folding",
+            "lowercase"
           ]
         }
       }
