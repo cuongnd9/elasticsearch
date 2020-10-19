@@ -39,6 +39,10 @@
       "bio_2": {
         "type":"text",
         "analyzer":"vietnamese_analyzer_2"
+      },
+      "bio_3": {
+        "type":"text",
+        "analyzer":"vi_analyzer"
       }
     }
   }
